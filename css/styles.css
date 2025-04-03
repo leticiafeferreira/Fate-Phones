@@ -1,0 +1,133 @@
+/* variavel para as cores  */
+:root {
+
+    --background-color: rgba(5, 13, 24, 0.555);
+
+    --fundo-menu-lateral: #482b57;
+    --fundo-claro: #ffffff;
+    --fundo-escuro: #ffffff;
+
+    --borda-clara: #4e055d;
+    --borda-escura: #f7fcfd;
+
+    --texto-escuro: #161616;
+    --texto-claro: #ffffff;
+    --texto-branco: #ecf8ff;
+    --texto-hover: #6b1785;
+    --texto-opaco: #81888c;
+
+    --cor-detalhes: #4e055d;
+
+    --texto-titulo-claro: #4b7c81;
+    --texto-titulo-escuro: #037F8C;
+
+    --sombra-clara: rgba(255, 255, 255, 1);
+    --sombra-escura: rgba(31, 31, 31, 0.1);
+}
+
+/* CSS Geral */
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--texto-claro);
+    background: var(--fundo-escuro);
+}
+
+/* cabeçalho */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    background-color: var(--fundo-menu-lateral);
+    padding: 0 15px;
+    overflow-y: auto;
+    z-index: 99;
+    transition: all ease-in-out 0.5s;
+}
+
+#header .perfil img {
+    margin: 15px auto;
+    display: block;
+    width: 120px;
+    border: 2px solid var(--borda-clara);
+    box-shadow: 0 0 5px var(--sombra-clara);
+}
+
+#header .perfil h1 {
+    font-size: 24px;
+    margin: 25px;
+    padding: 0;
+    font-weight: 600;
+    text-align: center;
+    color: wheat;
+}
+
+
+/* Redes Sociais */
+
+.perfil .social-links i {
+    font-size: 18px;
+    display: inline-block;
+    background: transparent;
+    color: var(--texto-claro);
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 5px;
+    border-radius: 50%;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    transition: 0.3s;
+    box-shadow: 0px 0px 5px 0px var(--sombra-clara);
+}
+
+.perfil .social-links a:hover,
+.social-links i:hover {
+    font-size: 18px;
+    display: inline-block;
+    background: white;
+    color: black;
+    margin-right: 5px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    box-shadow: 0px 0px 5px 0px var(--sombra-escura);
+}
+
+a {
+    text-decoration: none;
+}
+.mobile-nav-toggle {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 99999;
+    border: 0;
+    font-size: 26px;
+    transition: all 0.4s;
+    background: var(--cor-detalhes);
+    color: var(--texto-claro);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    cursor: pointer;
+}
+.mobile-nav-active {
+    overflow: hidden;
+}
+
+.mobile-nav-active #header {
+    left: 0;
+}
+ /*Ajuste para o corpodo conteudo*/
+
+/*menu responsivo*/
+@media (max-width:1199px) {
+    #header{
+        left: -300px;
+    }
+}
