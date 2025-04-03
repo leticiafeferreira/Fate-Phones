@@ -14,7 +14,7 @@
     --texto-claro: #ffffff;
     --texto-branco: #ecf8ff;
     --texto-hover: #6b1785;
-    --texto-opaco: #81888c;
+    --texto-opaco: #ffffff;
 
     --cor-detalhes: #4e055d;
 
@@ -22,7 +22,7 @@
     --texto-titulo-escuro: #037F8C;
 
     --sombra-clara: rgba(255, 255, 255, 1);
-    --sombra-escura: rgba(31, 31, 31, 0.1);
+    --sombra-escura: hsl(0, 2%, 51%);
 }
 
 /* CSS Geral */
