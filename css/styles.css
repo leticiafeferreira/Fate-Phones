@@ -3,7 +3,7 @@
 
     --background-color: rgba(5, 13, 24, 0.555);
 
-    --fundo-menu-lateral: #482b57;
+    --fundo-menu-lateral: #4f2664;
     --fundo-claro: #ffffff;
     --fundo-escuro: #ffffff;
 
@@ -11,7 +11,7 @@
     --borda-escura: #f7fcfd;
 
     --texto-escuro: #161616;
-    --texto-claro: #ffffff;
+    --texto-claro: #5e255e;
     --texto-branco: #ecf8ff;
     --texto-hover: #6b1785;
     --texto-opaco: #ffffff;
@@ -49,7 +49,7 @@ body {
 #header .perfil img {
     margin: 15px auto;
     display: block;
-    width: 120px;
+    width: 180px;
     border: 2px solid var(--borda-clara);
     box-shadow: 0 0 5px var(--sombra-clara);
 }
@@ -107,7 +107,7 @@ a {
     font-size: 26px;
     transition: all 0.4s;
     background: var(--cor-detalhes);
-    color: var(--texto-claro);
+    color: var(--texto-branco);
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -129,6 +129,13 @@ a {
 @media (max-width:1199px) {
     #header{
         left: -300px;
+    }
+    #main {
+        margin-left: 0;
+    }
+    .container {
+        padding-left: 12px;
+        padding-right: 12px;
     }
 }
 
@@ -211,4 +218,11 @@ a {
     padding-bottom: 4px;
     letter-spacing: 2px;
     border-bottom: 3px solid;
+}
+#main{
+    margin-left: 300px;
+}
+.container{
+    padding-left: 30px;
+    padding-right: 30px ;
 }
