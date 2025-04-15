@@ -70,7 +70,7 @@ body {
     font-size: 18px;
     display: inline-block;
     background: transparent;
-    color: var(--texto-claro);
+    color: var(--borda-escura);
     line-height: 1;
     padding: 8px 0;
     margin-right: 5px;
@@ -225,4 +225,27 @@ a {
 .container{
     padding-left: 30px;
     padding-right: 30px ;
+}
+section{
+    padding: 60px 0;
+    overflow: hidden;
+    background: var(--section-clara);
+}
+.section-bg{
+    background:var(--section-escura);
+    color: var(--fundo-claro);
+}
+/* estrutura do titulo seção */
+.section-title{
+    padding-bottom: 30px;
+}
+.section-title h2{
+    color: var(--section-escura);
+    font-weight: 600;
+margin-bottom: 20px;
+padding-bottom: 20px;
+position: relative;
+}
+.section-title h2::after{
+
 }

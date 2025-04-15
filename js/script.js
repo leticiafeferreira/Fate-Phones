@@ -49,7 +49,12 @@ if(typed){
   typed_strings = typed_strings.split(',')
 
   new Typed('.typed', {
-    strings: typed_strings
+    strings: typed_strings,
+    loop: true,
+    typeSpeed: 90, //velocidade de digitação
+    backSpeed: 50, //velociade em apagar
+    backDelay: 800, //tempo de espera
+
   })
 }
 
