@@ -59,6 +59,37 @@ if(typed){
 }
 
   new PureCounter();
+    /* JS PARA SKILLS = VENDAS */
+
+    let skilsContent = select('.skills-content');
+    if (skilsContent) { /* verifica se o elemento existe */
+        new Waypoint({ /* cria uma instancia */
+            element: skilsContent,
+            offset: '80%', /* janela de visualização */
+            handler: function(direction) {
+                let progress = select('.progress .progress-bar', true);
+                progress.forEach((el) => {
+                    el.style.width = el.getAttribute('aria-valuenow') + '%'
+                })
+            }
+        })
+    }
+
+    //isotope - bibloteca p filtro 
+    window.addEventListener('load', () => {
+      let portifolioContainer = select(".portifolio-container")
+      if (portifolioContainer) {
+        let portifolioIsotope = new Isotope(portifolioContainer,{
+          itemSelector: '.portifolio-item'
+        });
+
+        let portifolioFilters = select('#portifolio-filters li', true);
+      }
+
+
+    });
+
 
 })()
+
 

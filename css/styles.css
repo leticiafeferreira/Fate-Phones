@@ -15,7 +15,7 @@
     --texto-escuro: #161616;
     --texto-claro: #5e255e;
     --texto-branco: #ecf8ff;
-    --texto-hover: #6b1785;
+    --texto-hover: #994bb0;
     --texto-opaco: #ffffff;
 
     --cor-detalhes: #4e055d;
@@ -311,18 +311,53 @@ section{
     font-size: 20px;
 }
 
-/* Conquistas // Vendas*/
+/* Conquistas // Vendas */
 .conquistas {
     padding-bottom: 30px;
 }
+
 .conquistas .count-box {
     padding: 30px;
     width: 100%;
 }
+
 .conquistas .count-box i {
     color: var(--fundo-menu-lateral);
     font-size: 44px;
     display: block;
     float: left;
-    
+    line-height: 0;
+}
+
+.conquistas .count-box .count-box-i {
+    color: var(--fundo-menu-lateral);
+    font-size: 44px;
+    display: block;
+    float: left;
+    line-height: 40px;
+}
+
+.conquistas .count-box span {
+    font-size: 40px;
+    color: var(--fundo-menu-lateral);
+    display: block;
+    line-height: 40px;
+    font-weight: 700;
+    margin-left: 60px;
+}
+
+.conquistas .count-box p {
+    padding: 15px 0 0 0;
+    margin: 0 0 0 60px;
+    color: #5a382b;
+}
+
+.conquistas .count-box strong {
+    font-weight: 800;
+}
+
+.conquistas .count-box i:hover,
+.conquistas .count-box span:hover {
+    color: var(--texto-hover);
+    transition: ease-in-out .5s;
 }
